@@ -6,19 +6,19 @@ import java.util.Map;
 public class ContagemPalavras {
     Map<String, Integer> contagemPalavrasMap;
 
-    public ContagemPalavras(String palavra, Integer contagem){
+    public ContagemPalavras(String palavra, Integer contagem) {
         this.contagemPalavrasMap = new HashMap<>();
     }
 
-    public void exibirPalavras(){
+    public void exibirPalavras() {
         System.out.println(contagemPalavrasMap);
     }
 
-    public void adicionarPalavra(String palavra, Integer contagem){
+    public void adicionarPalavra(String palavra, Integer contagem) {
         this.contagemPalavrasMap.put(palavra, contagem);
     }
 
-    public void removerPalavra(String palavra){
+    public void removerPalavra(String palavra) {
         if (!contagemPalavrasMap.isEmpty()) {
             this.contagemPalavrasMap.remove(palavra);
         } else {
@@ -26,7 +26,7 @@ public class ContagemPalavras {
         }
     }
 
-    public int exibirContagemPalavras(){
+    public int exibirContagemPalavras() {
         int contagemTotal = 0;
         for (int contagem : contagemPalavrasMap.values()) {
             contagemTotal += contagem;
@@ -34,7 +34,7 @@ public class ContagemPalavras {
         return contagemTotal;
     }
 
-    public String encontrarPalavraMaisFrequente(){
+    public String encontrarPalavraMaisFrequente() {
         String palavraMaisFrequente = null;
         int maiorContagem = 0;
         for (Map.Entry<String, Integer> entry : contagemPalavrasMap.entrySet()) {

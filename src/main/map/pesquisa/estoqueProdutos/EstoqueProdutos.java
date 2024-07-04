@@ -1,4 +1,5 @@
 package estoqueProdutos;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,7 +43,7 @@ public class EstoqueProdutos {
 
     public static void main(String[] args) {
         EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
-        
+
         estoqueProdutos.adicionarProduto(1l, "Bermuda Jeans", 5.0, 10);
         estoqueProdutos.adicionarProduto(2l, "Havaianas", 10.0, 5);
         estoqueProdutos.adicionarProduto(3l, "Baby Tee", 15.0, 2);
