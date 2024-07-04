@@ -64,10 +64,10 @@ public class CarrinhoCompra {
         carrinhoCompra.adicionarItem("Calça Jeans", 199.99, 2);
         carrinhoCompra.adicionarItem("Mini Saia", 35.50, 1);
         carrinhoCompra.exibirItens();
-        
+
         carrinhoCompra.removerItem("Óculos de Sol");
         carrinhoCompra.exibirItens();
-        
+
         System.out.println("O valor total da compra é: " + carrinhoCompra.calcularValorTotal());
     }
 }
